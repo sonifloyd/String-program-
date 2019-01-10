@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ConvertStringToInteger",
+            "request": "launch",
+            "mainClass": "ConvertStringToInteger"
+        }
+    ]
+}
