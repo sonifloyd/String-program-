@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - GFG2",
+            "request": "launch",
+            "mainClass": "GFG2"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ConvertStringToInteger",
             "request": "launch",
             "mainClass": "ConvertStringToInteger"
