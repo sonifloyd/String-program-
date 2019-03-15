@@ -15,3 +15,29 @@ Aggregation is a specialized form of Association where all object have their own
 
 # What is composition in Java?
 Composition is again specialized form of Aggregation and we can call this as a “death” relationship. It is a strong type of Aggregation. Child object dose not have their lifecycle and if parent object deletes all child object will also be deleted. Let’s take again an example of relationship between House and rooms. House can contain multiple rooms there is no independent life of room and any room can not belongs to two different house if we delete the house room will automatically delete.
+# What is multiple inheritance? Is it supported by Java?
+MultipleInheritance - Java Interview Questions - If a child class inherits the property from multiple classes is known as multiple inheritance. Java does not allow to extend multiple classes.
+
+The problem with multiple inheritance is that if multiple parent classes have a same method name, then at runtime it becomes difficult for the compiler to decide which method to execute from the child class.
+
+Therefore, Java doesn’t support multiple inheritance. The problem is commonly referred as Diamond Problem.
+# What is singleton class and how can we make a class singleton?
+Singleton class is a class whose only one instance can be created at any given time, in one JVM. A class can be made singleton by making its constructor private.
+# What are wrapper classes?
+object reperesentation of primitive data type is calles wrapper classes. There are 8 classes.
+Primitive	                         Wrapper Class	                                     Constructor Argument
+boolean           	                   Boolean                                          	boolean or String
+byte	                                  Byte	                                             byte or String
+char	                                 Character	                                              char
+int                                 	Integer	                                               int or String
+float	                                 Float	                                              float, double or String
+double	                             Double	                                                   double or String
+long	                               Long	                                                      long or String
+short                              	Short	                                                       short or String
+Below is wrapper class hierarchy as per Java API
+                                           
+                                             
+
+             
+
+
