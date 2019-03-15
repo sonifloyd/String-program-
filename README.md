@@ -55,6 +55,10 @@ Ans: In Java, Java.lang.Throwable is the super class of all exception classes an
 Ans: If an exception is not handled in a program using try catch blocks, program gets aborted and no statement executes after the statement which caused exception throwing.
 # How objects are stored in Java?
 Ans: In java, each object when created gets a memory space from a heap. When an object is destroyed by a garbage collector, the space allocated to it from the heap is re-allocated to the heap and becomes available for any new objects.
+# I want my class to be developed in such a way that no other class (even derived class) can create its objects. How can I do so?
+Ans: If we declare the constructor of a class as private, it will not be accessible by any other class and hence, no other class will be able to instantiate it and formation of its object will be limited to itself only.
+
+
 
 
                                            
