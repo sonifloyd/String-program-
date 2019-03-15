@@ -61,6 +61,8 @@ Ans: If we declare the constructor of a class as private, it will not be accessi
 Ans: This can be implemented by use of the concept of synchronization. Database related code can be placed in a method which hs synchronized keyword so that only one thread can access it at a time.
 # In Java thread programming, which method is a must implementation for all threads?
 Ans: Run() is a method of Runnable interface that must be implemented by all threads.
+# I want to re-reach and use an object once it has been garbage collected. How it's possible?
+Ans: Once an object has been destroyed by garbage collector, it no longer exists on the heap and it can't be accessed again. There is no way to reference it again.
 
 
 
