@@ -51,6 +51,8 @@ Synchronization is the mechanism that ensures that only one thread is accessed t
 URL stands for Uniform Resource Locator and it points to resource files on the Internet. URL has four components: http://www. address. com:80/index.html, where http - protocol name, address - IP address or host name, 80 - port number and index.html - file path.
 # What's the base class of all exception classes?
 Ans: In Java, Java.lang.Throwable is the super class of all exception classes and all exception classes are derived from this base class.
+# What happens if an exception is not handled in a program?
+Ans: If an exception is not handled in a program using try catch blocks, program gets aborted and no statement executes after the statement which caused exception throwing.
 
 
                                            
