@@ -53,6 +53,8 @@ URL stands for Uniform Resource Locator and it points to resource files on the I
 Ans: In Java, Java.lang.Throwable is the super class of all exception classes and all exception classes are derived from this base class.
 # What happens if an exception is not handled in a program?
 Ans: If an exception is not handled in a program using try catch blocks, program gets aborted and no statement executes after the statement which caused exception throwing.
+# How objects are stored in Java?
+Ans: In java, each object when created gets a memory space from a heap. When an object is destroyed by a garbage collector, the space allocated to it from the heap is re-allocated to the heap and becomes available for any new objects.
 
 
                                            
