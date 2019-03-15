@@ -49,6 +49,10 @@ Thread contains ready, running, waiting and dead states.
 Synchronization is the mechanism that ensures that only one thread is accessed the resources at a time.
 # What is URL?
 URL stands for Uniform Resource Locator and it points to resource files on the Internet. URL has four components: http://www. address. com:80/index.html, where http - protocol name, address - IP address or host name, 80 - port number and index.html - file path.
+# What's the base class of all exception classes?
+Ans: In Java, Java.lang.Throwable is the super class of all exception classes and all exception classes are derived from this base class.
+
+
                                            
                                              
 
