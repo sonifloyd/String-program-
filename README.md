@@ -57,6 +57,12 @@ Ans: If an exception is not handled in a program using try catch blocks, program
 Ans: In java, each object when created gets a memory space from a heap. When an object is destroyed by a garbage collector, the space allocated to it from the heap is re-allocated to the heap and becomes available for any new objects.
 # I want my class to be developed in such a way that no other class (even derived class) can create its objects. How can I do so?
 Ans: If we declare the constructor of a class as private, it will not be accessible by any other class and hence, no other class will be able to instantiate it and formation of its object will be limited to itself only.
+ # I want to control database connections in my program and want that only one thread should be able to make database connection at a time. How can I implement this logic?
+Ans: This can be implemented by use of the concept of synchronization. Database related code can be placed in a method which hs synchronized keyword so that only one thread can access it at a time.
+# In Java thread programming, which method is a must implementation for all threads?
+Ans: Run() is a method of Runnable interface that must be implemented by all threads.
+
+
 
 
 
