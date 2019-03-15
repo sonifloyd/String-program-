@@ -35,6 +35,20 @@ double	                             Double	                                     
 long	                               Long	                                                      long or String
 short                              	Short	                                                       short or String
 Below is wrapper class hierarchy as per Java API
+# Why java is not 100% Object-oriented?
+Java is not 100% Object-oriented because it makes use of eight primitive datatypes such as boolean, byte, char, int, float, double, long, short which are not objects.
+# Explain public static void main(String args[]).
+public : Public is an access modifier, which is used to specify who can access this method. Public means that this Method will be accessible by any Class.
+static : It is a keyword in java which identifies it is class based i.e it can be accessed without creating the instance of a Class.
+void : It is the return type of the method. Void defines the method which will not return any value.
+main: It is the name of the method which is searched by JVM as a starting point for an application with a particular signature only. It is the method where the main execution occurs.
+String args[] : It is the parameter passed to the main method.
+# What are the states associated in the thread?
+Thread contains ready, running, waiting and dead states.
+ # What is synchronization?
+Synchronization is the mechanism that ensures that only one thread is accessed the resources at a time.
+# What is URL?
+URL stands for Uniform Resource Locator and it points to resource files on the Internet. URL has four components: http://www. address. com:80/index.html, where http - protocol name, address - IP address or host name, 80 - port number and index.html - file path.
                                            
                                              
 
