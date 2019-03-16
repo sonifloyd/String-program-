@@ -43,8 +43,7 @@ static : It is a keyword in java which identifies it is class based i.e it can b
 void : It is the return type of the method. Void defines the method which will not return any value.
 main: It is the name of the method which is searched by JVM as a starting point for an application with a particular signature only. It is the method where the main execution occurs.
 String args[] : It is the parameter passed to the main method.
-# What are the states associated in the thread?
-Thread contains ready, running, waiting and dead states.
+
  # What is synchronization?
 Synchronization is the mechanism that ensures that only one thread is accessed the resources at a time.
 # What is URL?
