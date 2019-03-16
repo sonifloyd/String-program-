@@ -34,7 +34,7 @@ float	                                 Float	                                   
 double	                             Double	                                                   double or String
 long	                               Long	                                                      long or String
 short                              	Short	                                                       short or String
-Below is wrapper class hierarchy as per Java API
+#  wrapper class hierarchy as per Java API
 # Why java is not 100% Object-oriented?
 Java is not 100% Object-oriented because it makes use of eight primitive datatypes such as boolean, byte, char, int, float, double, long, short which are not objects.
 # Explain public static void main(String args[]).
