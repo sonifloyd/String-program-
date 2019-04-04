@@ -110,6 +110,18 @@ Examples :
 java.lang.StackOverflowError, java.lang.OutOfMemoryError	Examples :
 Checked Exceptions : SQLException, IOException
 Unchecked Exceptions : ArrayIndexOutOfBoundException, ClassCastException, NullPointerException
+# Types of exceptions
+There are two types of exceptions in Java:
+1)Checked exceptions
+2)Unchecked exceptions
+
+# Checked exceptions
+All exceptions other than Runtime Exceptions are known as Checked exceptions as the compiler checks them during compilation to see whether the programmer has handled them or not. If these exceptions are not handled/declared in the program, you will get compilation error. For example, SQLException, IOException, ClassNotFoundException etc.
+
+# Unchecked Exceptions
+Runtime Exceptions are also known as Unchecked Exceptions. These exceptions are not checked at compile-time so compiler does not check whether the programmer has handled them or not but it’s the responsibility of the programmer to handle these exceptions and provide a safe exit. For example, ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException etc.
+
+
 # What happens if an exception is not handled in a program?
 Ans: If an exception is not handled in a program using try catch blocks, program gets aborted and no statement executes after the statement which caused exception throwing.
 # How objects are stored in Java?
