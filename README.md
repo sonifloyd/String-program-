@@ -73,6 +73,22 @@ String args[] : It is the parameter passed to the main method.
 
  # What is synchronization?
 Synchronization is the mechanism that ensures that only one thread is accessed the resources at a time.
+.It is uesd for data inconsistancy problem
+.It is only apply for method and blocks.
+.It is not apply for classes and variables.
+Synchronized (object)
+{
+// statement
+}
+# why we need this
+ex.
+ek bank account me 1000 rs h aur use do person ek hi time pe access kar rahe h 1st person 600.and 2nd person 500
+so there is problem we cant withdraw money 
+# disadvatage 
+It takes time 
+agar jayada jarurat nhi ho to synchronized na kar
+
+
 # What is URL?
 URL stands for Uniform Resource Locator and it points to resource files on the Internet. URL has four components: http://www. address. com:80/index.html, where http - protocol name, address - IP address or host name, 80 - port number and index.html - file path.
 # What's the base class of all exception classes?
