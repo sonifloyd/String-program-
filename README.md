@@ -22,7 +22,9 @@ The problem with multiple inheritance is that if multiple parent classes have a 
 
 Therefore, Java doesn’t support multiple inheritance. The problem is commonly referred as Diamond Problem.
 # What is singleton class and how can we make a class singleton?
-Singleton class is a class whose only one instance can be created at any given time, in one JVM. A class can be made singleton by making its constructor private.
+Singleton class is a class whose only one instance can be created at a given time, in one JVM. A class can be made singleton by making its constructor private.
+# why we use singleton class
+ Singleton patterns are used in logging, caches, thread pools, configuration settings, device driver objects.
 # What are wrapper classes?
 object reperesentation of primitive data type is calles wrapper classes. There are 8 classes.
 Primitive	                         Wrapper Class	                                     Constructor Argument
