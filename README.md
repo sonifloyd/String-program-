@@ -100,6 +100,16 @@ If an exception occurs, which has not been handled by programmer then program ex
 
 # What's the base class of all exception classes?
 Ans: In Java, Java.lang.Throwable is the super class of all exception classes and all exception classes are derived from this base class.
+# Errors                                                   	Exceptions
+Errors in java are of type java.lang.Error.	Exceptions in java are of type java.lang.Exception.
+All errors in java are unchecked type.	Exceptions include both checked as well as unchecked type.
+Errors happen at run time. They will not be known to compiler.	Checked exceptions are known to compiler where as unchecked exceptions are not known to compiler because they occur at run time.
+It is impossible to recover from errors.	You can recover from exceptions by handling them through try-catch blocks.
+Errors are mostly caused by the environment in which application is running.	Exceptions are mainly caused by the application itself.
+Examples :
+java.lang.StackOverflowError, java.lang.OutOfMemoryError	Examples :
+Checked Exceptions : SQLException, IOException
+Unchecked Exceptions : ArrayIndexOutOfBoundException, ClassCastException, NullPointerException
 # What happens if an exception is not handled in a program?
 Ans: If an exception is not handled in a program using try catch blocks, program gets aborted and no statement executes after the statement which caused exception throwing.
 # How objects are stored in Java?
