@@ -39,6 +39,27 @@ short                              	Short	                                      
 .It provide predefined method support
 .Automatic conversion of primitive data type to non pritive data type 
 .collection can not hold primitive data type.we use in collection
+# what is Autoboxing
+A process of converting primitive data type value to its corresponding non- primitive object by automatically(compiler)
+ex-
+public class{
+p.s.m(String args[]){
+int i=100;//this value have to convert into object form
+Integer i=Integer.valueOf(i);// this code is write before wrapper class now compiler internally write this code we do not have to write
+Integer ab =i;// autoboxing
+s.o.p(i);
+}}
+# Unboxing
+A process of converting Object  to its corresponding primitive value by automatically(compiler)
+ex-
+public class{
+p.s.m(String args[]){
+Integer i=new Integer(10);//now 10 is an object form we have to convert into value form
+int  ab=i.intValue();// this code is write before wrapper class now compiler internally write this code we do not have to write
+int ab =i;// Unoboxing
+s.o.p(i);
+}}
+
 # Why java is not 100% Object-oriented?
 Java is not 100% Object-oriented because it makes use of eight primitive datatypes such as boolean, byte, char, int, float, double, long, short which are not objects.
 # Explain public static void main(String args[]).
