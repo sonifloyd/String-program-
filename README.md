@@ -91,6 +91,13 @@ agar jayada jarurat nhi ho to synchronized na kar
 
 # What is URL?
 URL stands for Uniform Resource Locator and it points to resource files on the Internet. URL has four components: http://www. address. com:80/index.html, where http - protocol name, address - IP address or host name, 80 - port number and index.html - file path.
+# Define Exception
+An Exception is an unwanted event that interrupts the normal flow of the program. When an exception occurs program execution gets terminated. In such cases we get a system generated error message. The good thing about exceptions is that they can be handled in Java. By handling the exceptions we can provide a meaningful message to the user about the issue rather than a system generated message, which may not be understandable to a user.
+# Why an exception occurs?
+There can be several reasons that can cause a program to throw exception. For example: Opening a non-existing file in your program, Network connection problem, bad input data provided by user etc.
+# Exception Handling
+If an exception occurs, which has not been handled by programmer then program execution gets terminated and a system generated error message is shown to the user. For example look at the system generated exception below:
+
 # What's the base class of all exception classes?
 Ans: In Java, Java.lang.Throwable is the super class of all exception classes and all exception classes are derived from this base class.
 # What happens if an exception is not handled in a program?
