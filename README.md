@@ -35,6 +35,10 @@ double	                             Double	                                     
 long	                               Long	                                                      long or String
 short                              	Short	                                                       short or String
 #  wrapper class hierarchy as per Java API
+# Advantage of wrapper class
+.It provide predefined method support
+.Automatic conversion of primitive data type to non pritive data type 
+.collection can not hold primitive data type.we use in collection
 # Why java is not 100% Object-oriented?
 Java is not 100% Object-oriented because it makes use of eight primitive datatypes such as boolean, byte, char, int, float, double, long, short which are not objects.
 # Explain public static void main(String args[]).
