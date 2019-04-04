@@ -120,6 +120,18 @@ All exceptions other than Runtime Exceptions are known as Checked exceptions as 
 
 # Unchecked Exceptions
 Runtime Exceptions are also known as Unchecked Exceptions. These exceptions are not checked at compile-time so compiler does not check whether the programmer has handled them or not but it’s the responsibility of the programmer to handle these exceptions and provide a safe exit. For example, ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException etc.
+# Few Important points regarding finally block
+1. A finally block must be associated with a try block, you cannot use finally without a try block. You should place those statements in this block that must be executed always.
+
+2. Finally block is optional, as we have seen in previous tutorials that a try-catch block is sufficient for exception handling, however if you place a finally block then it will always run after the execution of try block.
+
+3. In normal case when there is no exception in try block then the finally block is executed after try block. However if an exception occurs then the catch block is executed before finally block.
+
+4. An exception in the finally block, behaves exactly like any other exception.
+
+5. The statements present in the finally block execute even if the try block contains control transfer statements like return, break or continue
+
+
 
 
 # What happens if an exception is not handled in a program?
