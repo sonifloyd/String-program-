@@ -1,0 +1,147 @@
+# 1) Is String a keyword in java?
+No. String is not a keyword in java. String is a final class in java.lang package 
+which is used to represent the set of characters in java.
+2) Is String a primitive type or derived type?
+String is a derived type.
+3) In how many ways you can create string objects in java?
+There are two ways to create string objects in java. One is using new operator and another one is using string literals. 
+The objects created using new operator are stored in the heap memory and objects created using string literals are 
+stored in string constant pool.
+String s1 = new String("abc");          //Creating string object using new operator
+ 
+String s2 = "abc";        //Creating string object using string literal
+- What is string constant pool?
+
+String objects are most used data objects in Java. Hence, java has a special arrangement to store the string objects. 
+String Constant Pool is one such arrangement. String Constant Pool is the memory space in heap memory specially allocated 
+to store the string objects created using string literals. In String Constant Pool, there will be no two string objects 
+having the same content.Whenever you create a string object using string literal, JVM first checks the content of 
+the object to be created. If there exist an object in the string constant pool with the same content, 
+then it returns the reference of that object. It doesn’t create a new object. If the content is different 
+from the existing objects then only it creates new object.
+5) What is special about string objects as compared to objects of other derived types?
+
+One special thing about string objects is that you can create string objects without 
+using new operator i.e using string literals. This is not possible with other derived types 
+(except wrapper classes). One more special thing about strings is that you can concatenate two string objects using ‘+’. 
+This is the relaxation java gives to string objects as they will be used most of the time while coding. 
+And also java provides string constant pool to store the string objects.
+6) What do you mean by mutable and immutable objects?
+Immutable objects are like constants. You can’t modify them once they are created. 
+They are final in nature. Where as mutable objects are concerned, you can perform modifications to them.
+7) Which is the final class in these three classes – String, StringBuffer and StringBuilder?
+All three are final. (Interviewer will ask this type of questions to confuse you)
+8) What is the difference between String, StringBuffer and StringBuilder?
+String objects created using java.lang.String class are immutable. Once they are created, they can not be modified. 
+If you try to modify them, a new string object will be created with modified content. This property of String class 
+may cause some memory issues for applications which need frequent modification of string objects. 
+To overcome this behavior of String class, two more classes are introduced in Java to represent the strings. 
+They are StringBuffer and StringBuilder. Both these classes are also members of java.lang package same as String class
+
+Immutability : 
+This is main reason why StringBuffer and StringBuilder are introduced. As objects of String class are immutable, objects of StringBuffer and StringBuilder class are mutable. You can change the contents of StringBuffer and StringBuider objects at any time of execution. When you change the content, new objects are not created. Instead of that the changes are applied to existing object. Thus solving memory issues may caused by String class.
+
+Object Creation :
+You have to use ‘new‘ operator to create objects to StringBuffer and StringBuilder classes. You can’t use string literals to create objects to these classes. For example, you can’t write StringBuffer sb = “JAVA” or StringBuilder sb = “JAVA”. It gives compile time error. But, you can use both string literals and new operator to create objects to String class.
+
+Storage Area :
+As objects of StringBuffer and StringBuilder are created using only new operator, they are stored in heap memory. Where as objects of String class are created using both string literals and new operator, they are stored in string constant pool as well as heap memory.
+
+Thread Safety :
+Any immutable object in java is thread safety. Because they are unchangeable once they are created. Any type of thread can’t change the content of immutable object. This applies to objects of String class also. Of the StringBuffer and StringBuilder objects, only StringBuffer objects are thread safety. All necessary methods in StringBuffer class are synchronized so that only one thread can enter into it’s object at any point of time. Where as StringBuilder objects are not thread safety.
+
+Performance :
+Because of thread safety property of String and StringBuffer classes, they reduces the performance of multithreaded applications. Because, multiple threads can’t enter into objects of these classes simultaneously. One thread has to wait until another thread is finished with them. But, you will not find performance problems if you use StringBuilder class. Becuase, multiple threads can enter into objects of this class. But, be aware that StringBuilder is not thread safety.
+
+String Concatenation :
+There will be serious performance issues when you are performing lots of string concatenation using String class. 
+This is because, each time you perform string concatenation using string class, a new object will be created with
+the concatenated string. This slows down an application. But, if you use either StringBuffer or StringBuilder
+instead of String class, your application will perform better. Below program shows time taken by all three classes 
+to perform string concatenation 10000 times.Therefore, when you are performing lots of string concatenation in your application, 
+it is better to use StringBuffer class (if you need thread safety) or StringBuilder class (If you don’t need thread safety).
+
+equals() and hashCode() Methods :
+In StringBuffer and StringBuilder classes, equals() and hashCode methods are not overrided.
+Where as in String class they are overrided.
+
+toString() Method :
+toString() method is overrided in all three classes. You can also convert StringBuffer and StringBuilder objects
+to String type by calling toString() method on them.
+9) Why StringBuffer and StringBuilder classes are introduced in java when there already exist String class to
+represent the set of characters?
+
+The objects of String class are immutable in nature. i.e you can’t modify them once they are created. 
+If you try to modify them, a new object will be created with modified content. This may cause memory and performance 
+issues if you are performing lots of string modifications in your code. 
+To overcome these issues, StingBuffer and StringBuilder classes are introduced in java.
+10) How many objects will be created in the following code and where they will be stored in the memory?
+String s1 = "abc";
+ 
+String s2 = "abc";
+Only one object will be created and this object will be stored in the string constant pool.
+11) How do you create mutable string objects?
+
+Using StringBuffer and StringBuilder classes. These classes provide mutable string objects.
+ (12)Which one will you prefer among “==” and equals() method to compare two string objects?
+
+I prefer equals() method because it compares two string objects based on their content. 
+That provides more logical comparison of two string objects. If you use “==” operator, it checks only
+references of two objects are equal or not. It may not be suitable in all situations.
+So, rather stick to equals() method to compare two string objects. 
+13) Which class will you recommend among String, StringBuffer and StringBuilder classes if I want mutable 
+and thread safe objects?
+StringBuffer
+15) How many objects will be created in the following code and where they will be stored?
+String s1 = new String("abc");
+ 
+String s2 = "abc";
+Here, two string objects will be created. Object created using new operator(s1) will be stored in the heap memory. 
+The object created using string literal(s2) is stored in the string constant pool.
+
+16) Where exactly string constant pool is located in the memory?
+
+Inside the heap memory. JVM reserves some part of the heap memory
+to store string objects created using string literals. 
+18) What is string intern?
+
+String object in the string constant pool is called as String Intern. You can create an exact copy of heap memory
+string object in string constant pool. This process of creating an exact copy of heap memory string object
+in the string constant pool is called interning. intern() method is used for interning.
+20) How many objects will be created in the following code and where they will be stored?
+String s1 = new String("abc");
+ 
+String s2 = new String("abc");
+Two objects will be created and they will be stored in the heap memory.
+22) do you have any idea why strings have been made immutable in java?
+
+a) Immutable strings increase security. As they can’t be modified once they are created, 
+so we can use them to store sensitive data like username, password etc.
+
+b) Immutable strings are thread safe. So, we can use them in a multi threaded code without synchronization.
+
+c) String objects are used in class loading. If strings are mutable, it is possible that wrong 
+class is being loaded as mutable objects are modifiable.
+** **23) What do you think about string constant pool? Why they have provided this pool as we can store string objects 
+in the heap memory itself?
+
+String constant pool increases the reusability of existing string objects. When you are creating a string object using 
+string literal, JVM first checks string constant pool. If that object is available, it returns reference of that object 
+rather creating a new object. This will also speed up 
+your application as only reference is returned and also saves the memory as no two objects with same content are created.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
