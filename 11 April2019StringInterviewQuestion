@@ -129,6 +129,9 @@ String constant pool increases the reusability of existing string objects. When 
 string literal, JVM first checks string constant pool. If that object is available, it returns reference of that object 
 rather creating a new object. This will also speed up 
 your application as only reference is returned and also saves the memory as no two objects with same content are created.
+# Can We Use String In Switch Case Statement?
+
+Answer :Yes from Java 7 string can be used in switch case statement.
 
 
 
