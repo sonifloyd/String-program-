@@ -174,6 +174,11 @@ The JVM uses locks in conjunction with monitors. A monitor is basically a guardi
 
 # . What’s a deadlock ?
 A condition that occurs when two processes are waiting for each other to complete, before proceeding. The result is that both processes wait endlessly.
+deadlock is situation where multithreads are trying to waiting for each other to complete for operation is known as deadlock.
+# how to avoid deadlock
+if u provide to an ordered access 
+# how deadlock occur
+b/c of synchronized keyword
 
 # . How do you ensure that N threads can access N resources without deadlock ?
 A very simple way to avoid deadlock while using N threads is to impose an ordering on the locks and force each thread to follow that ordering. Thus, if all threads lock and unlock the mutexes in the same order, no deadlocks can arise.
