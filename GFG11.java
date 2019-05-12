@@ -1,3 +1,7 @@
+// Reverse the word in sentance 
+ex i love india
+india love i
+
 import java.util.Scanner;
 public class GFG11{
     public static void main(String[] args) {
